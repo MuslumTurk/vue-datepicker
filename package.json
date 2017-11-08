@@ -1,6 +1,6 @@
 {
   "name": "wisdom-vue-datepicker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wisdom Datepicker Component for Vue",
   "main": "src/index.vue",
   "peerDependencies": {
