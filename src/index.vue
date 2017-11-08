@@ -39,12 +39,16 @@ export default {
     placeholder: {
       type: String,
       default: 'Pick date'
+    },
+    value: {
+      type: String,
+      default: null
     }
   },
 
   data () {
     return {
-      value: '',
+      mutableValue: '',
       datepicker: null
     }
   },
@@ -53,7 +57,7 @@ export default {
     if (!this.datepicker) {
       this.datepicker = new Datepicker(this.$el, this.config, this.l10n)
       this.datepicker.set('onChange', (d, s) => {
-        this.$emit('input', this.value = s)
+        this.$emit('input', this.mutableValue = s)
       })
     }
   },

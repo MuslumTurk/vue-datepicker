@@ -1,5 +1,5 @@
 <template>
-  <input class="input" :class="inputClass" type="text" :placeholder="placeholder" :readonly="readonly" v-model="value"/>
+  <input class="input" :class="inputClass" type="text" :placeholder="placeholder" :readonly="readonly" :value="value"/>
 </template>
 
 <script>
@@ -22,12 +22,15 @@ export default {
     inputClass: {
       type: Object,
       default: () => ({})
+    },
+    value: {
+      type: String,
+      default: null
     }
   },
 
   data () {
     return {
-      value: ''
     }
   }
 }

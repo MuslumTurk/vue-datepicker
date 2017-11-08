@@ -18,7 +18,7 @@ $ npm install wisdom-vue-datepicker --save
 </template>
 
 <script>
-import Datepicker from 'vue-wisdom-datepicker'
+import Datepicker from 'wisdom-vue-datepicker'
 
 export default {
   components: {
@@ -39,7 +39,7 @@ export default {
 </template>
 
 <script>
-import Datepicker from 'vue-wisdom-datepicker'
+import Datepicker from 'wisdom-vue-datepicker'
 
 export default {
   components: {
